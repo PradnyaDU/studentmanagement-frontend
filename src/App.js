@@ -1,12 +1,13 @@
-import GetAllStudents from "./GetAllStudents";
-function App() {
-  const myname = "Pradnya";
+  import GetAllStudents from "./Components/GetAllStudents";
+  function App() {
+    const myname = "Pradnya";
 
-  return (
-    <>
-      <GetAllStudents />
-    </>
-  );
-}
+    return (
+      <>
+        {myname}
+        <GetAllStudents className="form-control" />
+      </>
+    );
+  }
 
-export default App;
+  export default App;
