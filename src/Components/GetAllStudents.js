@@ -13,6 +13,11 @@ function GetAllStudents() {
 
   const fruitsArray = ["Apple", "Banana", "Mango", "Grapes"];
   const fruitObject = { name: "Apple", color: "Red", price: 100 };
+
+  function testTernaryOperator() {
+    const isLoggedIn = false;
+    return isLoggedIn ? "User is logged in" : "User is not logged in";
+  }
   function getFruits() {
     return (
       <ol>
@@ -52,8 +57,9 @@ function GetAllStudents() {
         onMouseClick={() => alert("You have changed the value")}
         placeholder="Enter your name"
       />
-      {getFruits()}
-      {getFruitDetails()}
+      {/* {getFruits()} */}
+      {/* {getFruitDetails()} */}
+      <div>{testTernaryOperator()}</div>
     </>
   );
 }
