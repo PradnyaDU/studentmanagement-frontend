@@ -7,9 +7,9 @@ export default function Hello({
   label,
   func,
 }) {
-  const [count, SetCount] = useState(0);
+  const [name, SetName] = useState("Pradnya");
   function handleClick() {
-    SetCount(count + 1);
+    SetName("Harshal");
   }
   return (
     <>
@@ -25,7 +25,7 @@ export default function Hello({
         <button onClick={() => alert(func())}>{label}</button>
         <br></br>
         <button onClick={handleClick}>Click me</button>
-        <p>Count is : {count}</p>
+        <p>Count is : {name}</p>
       </div>
     </>
   );
