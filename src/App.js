@@ -2,6 +2,7 @@ import GetAllStudents from "./Components/GetAllStudents";
 import "./Components/Hello";
 import { useState } from "react";
 import Hello from "./Components/Hello";
+import FormHandling from "./Components/FormHandling";
 export default function App() {
   const myname = ["Harshal", "Pradnya", "Rutuja", "Sanket"];
 
@@ -23,7 +24,7 @@ export default function App() {
     <>
       {/* {myname} */}
       {/* <GetAllStudents className="form-control" /> */}
-      <Hello
+      {/* <Hello
         names={myname}
         age={25}
         city="New York"
@@ -48,7 +49,9 @@ export default function App() {
         Age: {student.stuage}
         <br />
         City: {student.stucity}
-      </p>
+      </p> */}
+
+      <FormHandling></FormHandling>
     </>
   );
 }
