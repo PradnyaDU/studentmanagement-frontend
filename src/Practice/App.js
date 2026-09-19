@@ -1,10 +1,10 @@
-import GetAllStudents from "./Components/GetAllStudents";
-import "./Components/Hello";
+import GetAllStudents from "../Components/GetAllStudents.jsx";
+import "./Hello.jsx";
 import { useState } from "react";
-import Hello from "./Components/Hello";
-import FormHandling from "./Components/FormHandling";
-import AdvancedForm from "./Components/AdvanceForm";
-import UncontrolledForm from "./Components/UncontrolledForm.jsx";
+import Hello from "./Hello.jsx";
+import FormHandling from "./FormHandling.jsx";
+import AdvancedForm from "./AdvanceForm.jsx";
+import UncontrolledForm from "./UncontrolledForm.jsx";
 export default function App() {
   const myname = ["Harshal", "Pradnya", "Rutuja", "Sanket"];
 
