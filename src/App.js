@@ -4,6 +4,7 @@ import { useState } from "react";
 import Hello from "./Components/Hello";
 import FormHandling from "./Components/FormHandling";
 import AdvancedForm from "./Components/AdvanceForm";
+import UncontrolledForm from "./Components/UncontrolledForm.jsx";
 export default function App() {
   const myname = ["Harshal", "Pradnya", "Rutuja", "Sanket"];
 
@@ -53,7 +54,8 @@ export default function App() {
       </p> */}
 
       {/* <FormHandling></FormHandling> */}
-      <AdvancedForm></AdvancedForm>
+      {/* <AdvancedForm></AdvancedForm> */}
+      <UncontrolledForm></UncontrolledForm>
     </>
   );
 }
