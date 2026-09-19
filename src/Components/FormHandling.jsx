@@ -8,13 +8,11 @@ export default function FormHandling() {
   });
 
   const handleSubmit = (e) => {
-    debugger;
     e.preventDefault();
     console.log("formData =", form);
   };
 
   const handleChange = (e) => {
-    debugger;
     const { name, value } = e.target;
     setform((prevForm) => ({
       ...prevForm,

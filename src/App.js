@@ -3,6 +3,7 @@ import "./Components/Hello";
 import { useState } from "react";
 import Hello from "./Components/Hello";
 import FormHandling from "./Components/FormHandling";
+import AdvancedForm from "./Components/AdvanceForm";
 export default function App() {
   const myname = ["Harshal", "Pradnya", "Rutuja", "Sanket"];
 
@@ -51,7 +52,8 @@ export default function App() {
         City: {student.stucity}
       </p> */}
 
-      <FormHandling></FormHandling>
+      {/* <FormHandling></FormHandling> */}
+      <AdvancedForm></AdvancedForm>
     </>
   );
 }
