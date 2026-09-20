@@ -2,12 +2,24 @@ import { useEffect, useState } from "react";
 
 export default function UseEffectHandsOn() {
   const [name, setName] = useState("Pradnya");
+  const [seconds, setSeconds] = useState(0);
 
-  const [count, setCount] = useState(0);
+  //   const [count, setCount] =    useState(0);
+
+  //   useEffect(() => {
+  //     document.title = `Count : ${count}`;
+  //     console.log(`Component re-rendered !! ${count}`);
+  //   }, [count]);
 
   useEffect(() => {
-    console.log(`Component re-rendered !! ${count}`);
-  }, [name]);
+    debugger;
+    const interval = setInterval(() => {
+      setSeconds((prevSeconds) => prevSeconds + 1);
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <>
       <p onClick={() => setName(name === "Harshal" ? "Pradnya" : "Harshal")}>
@@ -15,9 +27,9 @@ export default function UseEffectHandsOn() {
         Name is: {name}
       </p>
 
-      <p> Count is: {count}</p>
-      <button onClick={() => setCount((c) => c + 1)}>Increment</button>
-      <button onClick={() => setCount(0)}>Reset</button>
+      <p> Time is: {seconds}</p>
+      {/* <button onClick={() => setCount((c) => c + 1)}>Increment</button>
+      <button onClick={() => setCount(0)}>Reset</button> */}
     </>
   );
 }
